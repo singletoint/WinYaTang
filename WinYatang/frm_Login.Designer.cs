@@ -344,7 +344,7 @@
             // 
             // tmrAutoInvest
             // 
-            this.tmrAutoInvest.Interval = 3000;
+            this.tmrAutoInvest.Interval = 2000;
             this.tmrAutoInvest.Tick += new System.EventHandler(this.tmrAutoInvest_Tick);
             // 
             // webBrowser1

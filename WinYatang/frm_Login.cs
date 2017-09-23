@@ -77,8 +77,6 @@ namespace WinYatang
 
             try
             {
-
-
                 string file = null;
                 if (rdoNewUser.Checked)
                 {
@@ -347,7 +345,7 @@ namespace WinYatang
             //密码加密
             //var ppay = Encrypt(txtPayPWD.Text, uniqKey); //支付密码
 
-            Thread.Sleep(3 * 1000);
+            Thread.Sleep(3000);
 
             string utf8Str = (string)webBrowser1.Document.InvokeScript("utf16to8", new string[] { txtPayPWD.Text });
             string xxteaEncryptStr = (string)webBrowser1.Document.InvokeScript("xxtea_encrypt", new string[] { utf8Str, uniqKey });
